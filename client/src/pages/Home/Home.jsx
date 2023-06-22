@@ -7,7 +7,7 @@ const Home = () => {
   const uiMgr = useContext(uiCtx);
 
   return (
-    <main className="bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-between h-screen w-screen">
+    <main className="bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-between  h-screen w-screen">
       <Nav />
       {uiMgr.showPopUp && <PopUp />}
     </main>

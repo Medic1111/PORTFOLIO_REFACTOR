@@ -16,6 +16,9 @@ const InModal = () => {
           >
             <div className=" relative w-auto my-6 mx-auto max-w-lg">
               <div className=" border-2 border-slate-950 relative flex flex-col w-full  outline-none focus:outline-none">
+                <p className="pb-5 text-green-900 text-2xl">
+                  <FaEarlybirds />
+                </p>
                 <Fade
                   duration={"200"}
                   cascade
@@ -32,9 +35,6 @@ const InModal = () => {
                 >
                   READY: CLICK TO START
                 </Fade>
-                <p className="pt-5 text-green-900 text-2xl">
-                  <FaEarlybirds />
-                </p>
               </div>
             </div>
           </div>
