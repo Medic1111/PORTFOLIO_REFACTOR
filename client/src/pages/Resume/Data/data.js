@@ -1,0 +1,31 @@
+export const techArr = [
+  "| HTML5 |",
+  " CSS3 | ",
+  " JavaScript ES-6 | ",
+  " Node.js | ",
+  " Express.js | ",
+  " REST API | ",
+  " MongoDB | ",
+  " Jest.js | ",
+  " Jasmine | ",
+  " SuperTest | ",
+  " React | ",
+  " React-Redux | ",
+  " Redux-Tool-Kit | ",
+  " Tailwind CSS | ",
+  " Git | ",
+  " Github | ",
+  " Github Projects| ",
+  " SCRUM/Agile | ",
+];
+
+export const educationArr = [
+  "Node.js Developer Path | MongoDB University",
+  "Team Mentor | Chingu.io",
+  "Backend Development and APIs | FCC",
+  "Responsive Web Design | FCC",
+  "JavaScript Algorithms and Data Sctructures | FCC",
+  "MERN Stack Development | Academind",
+  "React - Complete Guide | Academind",
+  "Associate's in Science - EMS | Palm Beach State College",
+];
