@@ -5,6 +5,7 @@ import Contact from "../../pages/Contact/Contact";
 import Tech from "../../pages/Tech/Tech";
 import Resume from "../../pages/Resume/Resume";
 import Projects from "../../pages/Projects/Projects";
+import { FaEarlybirds } from "react-icons/fa";
 
 const PopUp = () => {
   const uiMgr = useContext(uiCtx);
@@ -20,8 +21,11 @@ const PopUp = () => {
   return (
     <article className="p-1 gap-5 flex flex-col items-center bg-darker justify-center  h-4/5 w-2/3   border-2 border-borderGray mr-5 gap-1">
       <div className=" bg-light border-b-2 border-borderGray py-1   flex  w-full items-center bg-btnGray justify-between">
-        <p className="pl-1 font-mono uppercase">{`🦜${uiMgr.popUpTitle}`}</p>
-        <div className=" flex items-center justify-center gap-1 pr-1">
+        <p className="h-full flex items-center gap-1 pl-1 font-mono uppercase">
+          <FaEarlybirds />
+          {`${uiMgr.popUpTitle}`}
+        </p>
+        <div className="h-[92%] flex items-center justify-center gap-1 pr-1">
           <button
             onClick={() => minimize(uiMgr.popUpTitle)}
             className="border-2 border-borderGray bg-gray-500 pl-1 pr-1"

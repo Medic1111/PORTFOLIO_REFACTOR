@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { uiCtx } from "../../features/ui-ctx";
+import { FaEarlybirds } from "react-icons/fa";
+
 const OffModal = () => {
   const uiMgr = useContext(uiCtx);
 
@@ -13,8 +15,8 @@ const OffModal = () => {
           >
             <div className=" relative w-auto my-6 mx-auto max-w-lg">
               <div className=" border-2 border-slate-950 relative flex flex-col w-full  outline-none focus:outline-none">
-                <p className=" pl-1 text-start text-green-900 text-4xl ">
-                  IT IS NOW SAFE TO CLOSE THIS APPLICATION 🦜
+                <p className=" flex itenms-center pl-1 text-start text-green-900 text-4xl ">
+                  IT IS NOW SAFE TO CLOSE THIS APPLICATION <FaEarlybirds />
                 </p>
               </div>
             </div>

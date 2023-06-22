@@ -19,7 +19,7 @@ const Footer = () => {
         </button> */}
         <button
           onClick={() => uiMgr.setShowModal(true)}
-          className=" p-1 mr-1 border-slate-950 border-2 text-center font-mono text-xl uppercase   text-slate-950"
+          className=" bg-gray-400 p-1 mr-1 border-slate-950 border-2 text-center font-mono text-xl uppercase   text-slate-950"
         >
           <FaEarlybirds />
         </button>
@@ -31,7 +31,7 @@ const Footer = () => {
         </button> */}
         <button
           onClick={() => window.print()}
-          className="p-1 mr-1 border-2 border-slate-950 text-center font-mono text-xl uppercase  text-slate-950"
+          className=" bg-gray-400 p-1 mr-1 border-2 border-slate-950 text-center font-mono text-xl uppercase  text-slate-950"
         >
           <TfiPrinter />
         </button>

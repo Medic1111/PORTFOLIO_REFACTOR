@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { uiCtx } from "../../features/ui-ctx";
 import { Fade } from "react-awesome-reveal";
+import { FaEarlybirds } from "react-icons/fa";
+
 const InModal = () => {
   const uiMgr = useContext(uiCtx);
 
@@ -28,8 +30,11 @@ const InModal = () => {
                   cascade
                   className=" pl-1 text-start text-green-900 text-4xl "
                 >
-                  READY: CLICK TO START 🦜
+                  READY: CLICK TO START
                 </Fade>
+                <p className="pt-5 text-green-900 text-2xl">
+                  <FaEarlybirds />
+                </p>
               </div>
             </div>
           </div>

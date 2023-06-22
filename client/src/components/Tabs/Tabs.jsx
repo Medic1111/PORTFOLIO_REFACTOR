@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { uiCtx } from "../../features/ui-ctx";
+import { FaEarlybirds } from "react-icons/fa";
 
 const Tabs = () => {
   const uiMgr = useContext(uiCtx);
@@ -15,7 +16,7 @@ const Tabs = () => {
           onClick={() => expandTab(title)}
           className=" flex-grow cursor-pointer hover:bg-gray-400 truncate p-1 "
         >
-          {`|🦜| ${title}`}
+          | {` ${title}`}
         </p>
       ))}
     </div>
