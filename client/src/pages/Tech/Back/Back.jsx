@@ -1,10 +1,11 @@
 import { SiExpress } from "react-icons/si";
 import { DiNodejs, DiNodejsSmall } from "react-icons/di";
+import { classes } from "../classes";
 
 const Back = () => {
   return (
-    <div className="h-[93.2%] overflow-y-auto flex flex-col gap-5 p-1 h-full border-2 border-borderGray m-1 w-2/3 ">
-      <p className=" text-[8em]">
+    <div className={classes.techListBox}>
+      <p className=" text-8xl">
         <DiNodejsSmall />
       </p>
       <p>Node.js</p>

@@ -1,9 +1,10 @@
 import { IoLogoReact } from "react-icons/io5";
 import { SiTailwindcss, SiRedux } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
+import { classes } from "../classes";
 const Front = () => {
   return (
-    <div className="h-[93.2%] overflow-y-auto flex flex-col gap-5 p-1 h-[92.8%] border-2 border-borderGray m-1 w-2/3">
+    <div className={classes.techListBox}>
       {/*  */}
       <p className="text-8xl">
         <IoLogoReact />

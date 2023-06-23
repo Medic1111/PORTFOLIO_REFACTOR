@@ -1,8 +1,9 @@
 import { SiJest, SiJasmine } from "react-icons/si";
+import { classes } from "../classes";
 
 const Testing = () => {
   return (
-    <div className="h-[93.2%] overflow-y-auto flex flex-col gap-5 p-1 h-[92.8%] border-2 border-borderGray m-1 w-2/3">
+    <div className={classes.techListBox}>
       <p className=" text-8xl">
         <SiJest />
       </p>
