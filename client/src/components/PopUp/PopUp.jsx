@@ -41,7 +41,7 @@ const PopUp = () => {
         </div>
       </div>
 
-      <div className=" w-full bg-gray-300  border-2 border-gray-950 h-[80%] w-[95%] ">
+      <div className=" w-full bg-gray-300  border-2 border-gray-950 h-[85%] w-[95%]">
         {uiMgr.showAbout && <About />}
         {uiMgr.showProjects && <Projects />}
         {uiMgr.showContact && <Contact />}
