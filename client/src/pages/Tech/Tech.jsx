@@ -7,6 +7,8 @@ import Data_Base from "./Data_Base/Data_Base";
 import Testing from "./Testing/Testing";
 import Version from "./Version/Version";
 import Flow from "./Flow/Flow";
+import { classes } from "./classes";
+
 const Tech = () => {
   const techMgr = useContext(techCtx);
 
@@ -15,8 +17,39 @@ const Tech = () => {
     foo(true);
   };
 
+  const dataArr = [
+    {
+      title: "lang",
+      foo: techMgr.setShowLang,
+    },
+    {
+      title: "front",
+      foo: techMgr.setShowFront,
+    },
+    {
+      title: "back",
+      foo: techMgr.setShowBack,
+    },
+    {
+      title: "data",
+      foo: techMgr.setShowDB,
+    },
+    {
+      title: "test",
+      foo: techMgr.setShowTest,
+    },
+    {
+      title: "v",
+      foo: techMgr.setShowVersion,
+    },
+    {
+      title: "flow",
+      foo: techMgr.setShowFlow,
+    },
+  ];
+
   return (
-    <section className="p-1 gap-1 flex items-start justify-between w-full h-full bg-light">
+    <section className={classes.techContainer}>
       {techMgr.showLang && <Langs />}
       {techMgr.showFront && <Front />}
       {techMgr.showBack && <Back />}
@@ -25,50 +58,17 @@ const Tech = () => {
       {techMgr.showVersion && <Version />}
       {techMgr.showFlow && <Flow />}
 
-      <div className="p-1 flex flex-col gap-1 items-center justify-start h-[93%] border-2 border-borderGray m-1  bg-darker w-1/3">
-        <button
-          onClick={() => selectOption(techMgr.setShowLang)}
-          className="bg-light uppercase w-full border-2 border-borderGray"
-        >
-          {/* languages */}
-          lang
-        </button>
-        <button
-          onClick={() => selectOption(techMgr.setShowFront)}
-          className="bg-light uppercase w-full border-2 border-borderGray"
-        >
-          {/* frontend */} front
-        </button>
-        <button
-          onClick={() => selectOption(techMgr.setShowBack)}
-          className="bg-light uppercase w-full border-2 border-borderGray"
-        >
-          {/* backend */}back
-        </button>
-        <button
-          onClick={() => selectOption(techMgr.setShowDB)}
-          className="bg-light uppercase w-full border-2 border-borderGray"
-        >
-          {/* database */}data
-        </button>
-        <button
-          onClick={() => selectOption(techMgr.setShowTest)}
-          className="bg-light uppercase w-full border-2 border-borderGray"
-        >
-          {/* testing */}test
-        </button>
-        <button
-          onClick={() => selectOption(techMgr.setShowVersion)}
-          className="bg-light uppercase w-full border-2 border-borderGray"
-        >
-          {/* version */}v
-        </button>
-        <button
-          onClick={() => selectOption(techMgr.setShowFlow)}
-          className="bg-light uppercase w-full border-2 border-borderGray"
-        >
-          flow
-        </button>
+      <div className={classes.btnBox}>
+        {dataArr.map((obj) => {
+          return (
+            <button
+              onClick={() => selectOption(obj.foo)}
+              className={classes.btn}
+            >
+              {obj.title}
+            </button>
+          );
+        })}
       </div>
     </section>
   );
