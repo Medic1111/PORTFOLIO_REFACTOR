@@ -2,18 +2,17 @@ import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { more, prompt } from "./Data/data";
 
-let hasSelected = false;
-
-const About = () => {
+const About = ({ hasSelected }) => {
   const [showMore, setShowMore] = useState(false);
   const [showInvalid, setShowInvalid] = useState(false);
   const [showQuit, setShowQuit] = useState(false);
 
   const handleKeyDown = (e) => {
+    let kee = e.key.toLowerCase();
     if (!hasSelected) {
-      e.key === "y" && setShowMore(true);
-      e.key === "n" && setShowQuit(true);
-      e.key !== "y" && e.key !== "n" && setShowInvalid(true);
+      kee === "y" && setShowMore(true);
+      kee === "n" && setShowQuit(true);
+      kee !== "y" && kee !== "n" && setShowInvalid(true);
       hasSelected = true;
     }
   };

@@ -13,7 +13,8 @@ const Front = () => {
       <p>
         Proper understanding of the virtual DOM, functional approach utilizing
         hooks suchs as: useState, useCallback, useContext, useEffect, custom
-        hooks, etc..., knowledge about render cycle, implementation of S.O.L.I.D
+        hooks, etc..., proficiency in JSX, react router, handling and validating
+        forms, knowledge about render cycle, implementation of S.O.L.I.D
         principles, proper folder structure, and extensive abstraction.
       </p>
       <hr></hr>
@@ -23,10 +24,10 @@ const Front = () => {
       </p>
       <p>TAILWIND-CSS</p>
       <p>
-        Integration and implementation using the custom config file for themes.
-        Abstraction and reutilization of styles. Mobile first development
-        addressing proper breakpoints for beautiful designs that are mobile
-        friendly.
+        Mostly used to rapidly build responsive and customizable user interfaces
+        with a utility first and mobile first approach. Understanding of utility
+        classes to avoid writing custom CSS. Easy integration and optimization
+        in production builds.
       </p>
       <hr></hr>
       {/*  */}
@@ -35,10 +36,9 @@ const Front = () => {
       </p>
       <p>REACT-REDUX</p>
       <p>
-        Integration and implementation using the custom config file for themes.
-        Abstraction and reutilization of styles. Mobile first development
-        addressing proper breakpoints for beautiful designs that are mobile
-        friendly.
+        My "go to" for managing complex application states with defined actions,
+        reducers, and a store to control changes. Proficiency connecting
+        components to the store.
       </p>
       <hr></hr>
       {/*  */}
@@ -47,10 +47,10 @@ const Front = () => {
       </p>
       <p>REDUX-TOOL-KIT & QUERY</p>
       <p>
-        Integration and implementation using the custom config file for themes.
-        Abstraction and reutilization of styles. Mobile first development
-        addressing proper breakpoints for beautiful designs that are mobile
-        friendly.
+        Experienced in setting up a react application with toolkit, providing
+        excellent configuration to redux and simplifying store creating and
+        state management. Solid understanding of slices and RTK-Query for API
+        request traffic.
       </p>
       <hr></hr>
       {/*  */}

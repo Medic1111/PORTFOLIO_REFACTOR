@@ -9,6 +9,7 @@ import { FaEarlybirds } from "react-icons/fa";
 
 const PopUp = () => {
   const uiMgr = useContext(uiCtx);
+  let hasSelected = false;
 
   const closeWindow = (title) => {
     uiMgr.closeTab(title);
@@ -42,7 +43,7 @@ const PopUp = () => {
       </div>
 
       <div className=" w-full bg-gray-300  border-2 border-gray-950 h-[85%] w-[95%]">
-        {uiMgr.showAbout && <About />}
+        {uiMgr.showAbout && <About hasSelected={hasSelected} />}
         {uiMgr.showProjects && <Projects />}
         {uiMgr.showContact && <Contact />}
         {uiMgr.showResume && <Resume />}
