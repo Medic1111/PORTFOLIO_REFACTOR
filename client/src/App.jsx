@@ -7,14 +7,14 @@ import InModal from "./components/InModal/InModal";
 
 function App() {
   return (
-    <>
+    <div className="flex align-start justify-start flex-col h-screen w-screen max-w-screen">
       <Header />
       <InModal />
       <Home />
       <SystemOff />
       <OffModal />
       <Footer />
-    </>
+    </div>
   );
 }
 

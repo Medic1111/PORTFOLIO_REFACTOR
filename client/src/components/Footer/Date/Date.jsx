@@ -7,7 +7,7 @@ const DateCal = () => {
           "/" +
           new Date().getDate() +
           "/" +
-          new Date().getFullYear()}
+          String(new Date().getFullYear()).slice(2)}
       </p>
     </div>
   );

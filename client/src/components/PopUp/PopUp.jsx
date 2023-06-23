@@ -19,7 +19,7 @@ const PopUp = () => {
     return uiMgr.setShowPopUp(false);
   };
   return (
-    <article className="p-1 gap-5 flex flex-col items-center bg-darker justify-center  h-4/5 w-2/3   border-2 border-borderGray mr-5 gap-1">
+    <article className="p-1 gap-5 flex flex-col items-center bg-darker  w-[75%] h-[75%]  sm:h-4/5  sm:w-2/3   border-2 border-borderGray  sm:mr-5 gap-1">
       <div className=" bg-light border-b-2 border-borderGray py-1   flex  w-full items-center bg-btnGray justify-between">
         <p className="h-full flex items-center gap-1 pl-1 font-mono uppercase">
           <FaEarlybirds />

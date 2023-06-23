@@ -30,37 +30,38 @@ const Tech = () => {
           onClick={() => selectOption(techMgr.setShowLang)}
           className="bg-light uppercase w-full border-2 border-borderGray"
         >
-          languages
+          {/* languages */}
+          lang
         </button>
         <button
           onClick={() => selectOption(techMgr.setShowFront)}
           className="bg-light uppercase w-full border-2 border-borderGray"
         >
-          frontend
+          {/* frontend */} front
         </button>
         <button
           onClick={() => selectOption(techMgr.setShowBack)}
           className="bg-light uppercase w-full border-2 border-borderGray"
         >
-          backend
+          {/* backend */}back
         </button>
         <button
           onClick={() => selectOption(techMgr.setShowDB)}
           className="bg-light uppercase w-full border-2 border-borderGray"
         >
-          database
+          {/* database */}data
         </button>
         <button
           onClick={() => selectOption(techMgr.setShowTest)}
           className="bg-light uppercase w-full border-2 border-borderGray"
         >
-          testing
+          {/* testing */}test
         </button>
         <button
           onClick={() => selectOption(techMgr.setShowVersion)}
           className="bg-light uppercase w-full border-2 border-borderGray"
         >
-          version
+          {/* version */}v
         </button>
         <button
           onClick={() => selectOption(techMgr.setShowFlow)}

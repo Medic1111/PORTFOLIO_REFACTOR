@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { uiCtx } from "../../features/ui-ctx";
+import { classes } from "./classes";
 
 const SystemOff = () => {
   const uiMgr = useContext(uiCtx);
@@ -8,26 +9,22 @@ const SystemOff = () => {
     <>
       {uiMgr.showModal ? (
         <>
-          <div className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className=" relative w-auto my-6  mx-auto max-w-lg ">
+          <div className={classes.modalBox}>
+            <div className={classes.popUpBox}>
               {/*content*/}
-              <div className=" border-2 border-slate-950 relative flex flex-col w-full bg-gray-300 outline-none focus:outline-none">
+              <div className={classes.contentBox}>
                 {/*header*/}
-                <div className="flex  w-full items-start justify-between border-b border-solid border-slate-200 ">
-                  <h3 className="bg-gray-400 p-1 w-96 border-b-2 border-slate-950   text-l font-semibold ">
-                    Kiwi System:
-                  </h3>
+                <div className={classes.headerBox}>
+                  <h3 className={classes.header}>Kiwi System:</h3>
                 </div>
                 {/*body*/}
-                <div className="h-16 w-full w-80 relative flex-auto">
-                  <p className="pl-1 text-start text-slate-950 text-md ">
-                    Shut system off?
-                  </p>
+                <div className={classes.textBox}>
+                  <p className={classes.text}>Shut system off?</p>
                 </div>
                 {/*footer*/}
-                <div className="w-full flex items-between  p-1  ">
+                <div className={classes.btnBox}>
                   <button
-                    className="text-gray-950 border-2 border-gray-950  uppercase  px-3 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className={classes.btn}
                     type="button"
                     onClick={() => {
                       uiMgr.setShowModal(false);
@@ -37,7 +34,7 @@ const SystemOff = () => {
                     Yes
                   </button>
                   <button
-                    className="text-gray-950 border-2 border-gray-950  uppercase  px-3 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className={classes.btn}
                     type="button"
                     onClick={() => uiMgr.setShowModal(false)}
                   >

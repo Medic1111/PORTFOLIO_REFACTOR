@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { uiCtx } from "../../features/ui-ctx";
 import { Fade } from "react-awesome-reveal";
 import { FaEarlybirds } from "react-icons/fa";
+import { classes } from "./classes";
 
 const InModal = () => {
   const uiMgr = useContext(uiCtx);
@@ -12,30 +13,24 @@ const InModal = () => {
         <>
           <div
             onClick={() => uiMgr.setShowIn(false)}
-            className="bg-slate-950 justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+            className={classes.modalBox}
           >
-            <div className=" relative w-auto my-6 mx-auto max-w-lg">
-              <div className=" border-2 border-slate-950 relative flex flex-col w-full  outline-none focus:outline-none">
-                <p className="pb-5 text-green-900 text-2xl">
-                  <FaEarlybirds />
-                </p>
-                <Fade
-                  duration={"200"}
-                  cascade
-                  className=" pl-1 text-start text-green-900 text-4xl "
-                >
-                  BOOTING UP...
-                </Fade>
-                <br />
-                <Fade
-                  delay={1000}
-                  duration={"200"}
-                  cascade
-                  className=" pl-1 text-start text-green-900 text-4xl "
-                >
-                  READY: CLICK TO START
-                </Fade>
-              </div>
+            <div className={classes.txtBox}>
+              <p className={classes.icon}>
+                <FaEarlybirds />
+              </p>
+              <Fade duration={"200"} cascade className={classes.txt}>
+                BOOTING UP...
+              </Fade>
+              <br />
+              <Fade
+                delay={1000}
+                duration={"200"}
+                cascade
+                className={classes.txt}
+              >
+                READY: CLICK TO START
+              </Fade>
             </div>
           </div>
         </>

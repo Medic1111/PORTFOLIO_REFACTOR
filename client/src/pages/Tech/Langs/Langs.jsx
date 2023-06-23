@@ -2,7 +2,7 @@ import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
 import { FaJava } from "react-icons/fa";
 const Langs = () => {
   return (
-    <div className="h-full overflow-y-auto flex flex-col gap-5 p-1 h-[92.8%] border-2 border-borderGray m-1 w-2/3">
+    <div className="h-full overflow-y-auto flex flex-col gap-5 p-1 h-[92%] border-2 border-borderGray m-1 w-2/3">
       <p className=" text-8xl">
         <IoLogoJavascript />
       </p>
