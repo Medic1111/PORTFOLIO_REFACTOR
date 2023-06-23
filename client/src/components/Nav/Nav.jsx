@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { uiCtx } from "../../features/ui-ctx";
+import { classes } from "./classes";
 
 const Nav = () => {
   const uiMgr = useContext(uiCtx);
@@ -12,43 +13,43 @@ const Nav = () => {
   };
 
   return (
-    <nav className="  flex wrap gap-7 flex-col items-center justify-start pt-5 sm:p-5 h-4/5 w-auto ">
+    <nav className={classes.nav}>
       <button
         onClick={() => {
-          showPopUp(" About", uiMgr.setShowAbout);
+          showPopUp("About", uiMgr.setShowAbout);
         }}
-        className=" text-3xl sm:text-5xl flex flex-col items-center justify-center"
+        className={classes.btn}
       >
         📇
-        <span className=" text-sm">about</span>
+        <span className={classes.span}>about</span>
       </button>
 
       <button
         onClick={() => {
           showPopUp(" Resume", uiMgr.setShowResume);
         }}
-        className="text-3xl sm:text-5xl flex flex-col items-center justify-center"
+        className={classes.btn}
       >
         📑
-        <span className=" text-sm">resume</span>
+        <span className={classes.span}>resume</span>
       </button>
       <button
         onClick={() => {
           showPopUp(" Tech", uiMgr.setShowTech);
         }}
-        className="text-3xl sm:text-5xl flex flex-col items-center justify-center"
+        className={classes.btn}
       >
         ⚙️
-        <span className=" text-sm">tech</span>
+        <span className={classes.span}>tech</span>
       </button>
       <button
         onClick={() => {
           showPopUp(" projects", uiMgr.setShowProjects);
         }}
-        className="text-3xl sm:text-5xl flex flex-col items-center justify-center"
+        className={classes.btn}
       >
         🗂
-        <span className=" text-sm">projects</span>
+        <span className={classes.span}>projects</span>
       </button>
       <button
         onClick={() => {
@@ -57,7 +58,7 @@ const Nav = () => {
         className="text-3xl sm:text-5xl flex flex-col items-center justify-center"
       >
         📧
-        <span className=" text-sm">contact</span>
+        <span className={classes.span}>contact</span>
       </button>
     </nav>
   );

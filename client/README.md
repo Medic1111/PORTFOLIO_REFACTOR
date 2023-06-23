@@ -1,6 +1,1 @@
-- HEADER: DECENT MOBILE
-- FOOTER: SLICED YEAR MOBILE
-- SYSTEM OFF: W-80, 96 after SM
-- MAIN: Abbreviate To TECH, resolved issues
-- POPUP: Remove margin right until sm, set the original width to apply sm forward, allow it auto otherwise
-- NAV: Reduced font size icons.
+RES, PROJ,> Missing abstraction of classes

@@ -6,6 +6,7 @@ import Tech from "../../pages/Tech/Tech";
 import Resume from "../../pages/Resume/Resume";
 import Projects from "../../pages/Projects/Projects";
 import { FaEarlybirds } from "react-icons/fa";
+import { classes } from "./classes";
 
 const PopUp = () => {
   const uiMgr = useContext(uiCtx);
@@ -20,29 +21,29 @@ const PopUp = () => {
     return uiMgr.setShowPopUp(false);
   };
   return (
-    <article className="p-1 gap-5 flex flex-col items-center bg-darker  w-[75%] h-[75%]  sm:h-4/5  sm:w-2/3   border-2 border-borderGray  sm:mr-5 gap-1">
-      <div className=" bg-light border-b-2 border-borderGray py-1   flex  w-full items-center bg-btnGray justify-between">
-        <p className="h-full flex items-center gap-1 pl-1 font-mono uppercase">
+    <article className={classes.popUp}>
+      <div className={classes.headerBox}>
+        <p className={classes.icon}>
           <FaEarlybirds />
           {`${uiMgr.popUpTitle}`}
         </p>
-        <div className="h-[92%] flex items-center justify-center gap-1 pr-1">
+        <div className={classes.btnBox}>
           <button
             onClick={() => minimize(uiMgr.popUpTitle)}
-            className="border-2 border-borderGray bg-gray-500 pl-1 pr-1"
+            className={classes.btn}
           >
             ↓
           </button>
           <button
             onClick={() => closeWindow(uiMgr.popUpTitle)}
-            className=" border-2 border-gray-950 bg-gray-500 pl-1 pr-1"
+            className={classes.btn}
           >
             ✕
           </button>
         </div>
       </div>
 
-      <div className=" w-full bg-gray-300  border-2 border-gray-950 h-[85%] w-[95%]">
+      <div className={classes.contentWrapper}>
         {uiMgr.showAbout && <About hasSelected={hasSelected} />}
         {uiMgr.showProjects && <Projects />}
         {uiMgr.showContact && <Contact />}
