@@ -13,7 +13,7 @@ const Tabs = () => {
     <div className={classes.div}>
       {uiMgr.tabs.map((title) => (
         <p onClick={() => expandTab(title)} className={classes.p}>
-          | {` ${title}`}
+          | {` ${title.toLowerCase()}`}
         </p>
       ))}
     </div>

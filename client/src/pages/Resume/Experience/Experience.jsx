@@ -10,18 +10,18 @@ const Experience = () => {
       <p className="my-2 underline">Description:</p>
       <ul className="pb-3 border-b-2">
         <li className="my-2">
-          - Contributed to the successful delivery of a comprehensive web
+          - Contribute to the successful delivery of a comprehensive web
           development curriculum encompassing cutting-edge technologies,
           including HTML5, CSS3, JavaScript, Git, Github, Java 11, Spring, and
           SQL.
         </li>
         <li className="my-2">
-          - Evaluated and enhanced student learning by meticulously reviewing,
+          - Evaluate and enhance student learning by meticulously reviewing,
           analyzing, and providing constructive feedback on their quiz
           solutions, homework assignments, and graded projects.
         </li>
         <li className="my-2">
-          - Strengthened students' understanding of key concepts through
+          - Strengthening students' understanding of key concepts through
           engaging and informative lecture reviews, facilitating clarification
           sessions, and reinforcing core principles in dedicated 3-hour weekly
           group sessions, in addition to conducting personalized 1:1 meetings to

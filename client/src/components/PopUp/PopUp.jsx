@@ -5,6 +5,7 @@ import Contact from "../../pages/Contact/Contact";
 import Tech from "../../pages/Tech/Tech";
 import Resume from "../../pages/Resume/Resume";
 import Projects from "../../pages/Projects/Projects";
+import EachProject from "../../pages/Projects/EachProject/EachProject";
 import { FaEarlybirds } from "react-icons/fa";
 import { classes } from "./classes";
 
@@ -49,6 +50,7 @@ const PopUp = () => {
         {uiMgr.showContact && <Contact />}
         {uiMgr.showResume && <Resume />}
         {uiMgr.showTech && <Tech />}
+        {uiMgr.showEachProject && <EachProject />}
       </div>
     </article>
   );

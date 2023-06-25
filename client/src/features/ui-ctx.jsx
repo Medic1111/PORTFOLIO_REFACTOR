@@ -15,6 +15,8 @@ const UiProvider = ({ children }) => {
   const [showModal, setShowModal] = useState(false);
   const [showOff, setShowOff] = useState(false);
   const [showIn, setShowIn] = useState(true);
+  const [showEachProject, setShowEachProject] = useState(false);
+  const [projectToShow, setProjectToShow] = useState({});
 
   const addTab = (title) => {
     if (tabs.includes(title)) return;
@@ -38,6 +40,11 @@ const UiProvider = ({ children }) => {
       case "contact":
         setShowContact(true);
         break;
+      case "m11-studio":
+      case "fleet-control":
+      case "!cube-studio":
+        setShowEachProject(true);
+        break;
       default:
         return "REACHING HERE";
     }
@@ -54,6 +61,7 @@ const UiProvider = ({ children }) => {
     setPopUpTitle(title);
     setShowPopUp(true);
     retStateFoo(title);
+    setProjectToShow(title);
   };
 
   const reset = () => {
@@ -62,6 +70,7 @@ const UiProvider = ({ children }) => {
     setShowProjects(false);
     setShowResume(false);
     setShowTech(false);
+    setShowEachProject(false);
   };
 
   return (
@@ -92,6 +101,10 @@ const UiProvider = ({ children }) => {
         showIn,
         setShowIn,
         reset,
+        showEachProject,
+        setShowEachProject,
+        projectToShow,
+        setProjectToShow,
       }}
     >
       {children}

@@ -23,5 +23,9 @@ export const uiInitialState = {
   setShowOff: () => {},
   showIn: true,
   setShowIn: () => {},
+  projectToShow: {},
+  setProjectToShow: () => {},
+  showEachProject: false,
+  setShowEachProject: () => {},
   reset: () => {},
 };
