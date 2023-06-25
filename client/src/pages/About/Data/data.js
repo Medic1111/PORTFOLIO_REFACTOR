@@ -1,5 +1,6 @@
 export const prompt = [
-  "_kw_: GET PROFILE: Aryse Pagano",
+  "_kw_: GET PROFILE: ",
+  "ARYSE PAGANO",
   "peculiar",
   "practical",
   "objective",
