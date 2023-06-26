@@ -7,8 +7,8 @@ const Contact = () => {
     e.preventDefault();
 
     const toRef = setTimeout(() => {
-      clearTimeout(toRef);
       setShowConnect(true);
+      clearTimeout(toRef);
     }, 1000);
   };
 

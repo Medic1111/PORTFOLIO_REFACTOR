@@ -58,7 +58,7 @@ const EachProject = () => {
         Gallery:
       </p>
       {projectToShow.gallery.map((el) => (
-        <img className=" border-2  border-gray-800" src={el} />
+        <img className=" border-2 border-t-0  border-gray-800" src={el} />
       ))}
     </div>
   );
