@@ -43,6 +43,8 @@ const UiProvider = ({ children }) => {
       case "m11-studio":
       case "fleet-control":
       case "!cube-studio":
+      case "nomad-me":
+      case "open-source":
         setShowEachProject(true);
         break;
       default:
