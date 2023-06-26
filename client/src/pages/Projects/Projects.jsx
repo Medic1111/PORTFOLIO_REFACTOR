@@ -3,7 +3,7 @@ import { uiCtx } from "../../features/ui-ctx";
 
 const titles = [
   "M11-Studio",
-  // "Nomad-me",
+  "Nomad-me",
   // "Fleet-control",
   // "!Cube-Studio",
   // "Open-source",
