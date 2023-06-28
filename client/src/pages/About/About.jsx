@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { more, prompt } from "./Data/data";
+import { useMediaQuery } from "react-responsive";
 
 const About = ({ hasSelected }) => {
   const [showMore, setShowMore] = useState(false);
   const [showInvalid, setShowInvalid] = useState(false);
   const [showQuit, setShowQuit] = useState(false);
+  const isMobile = useMediaQuery({ query: "(max-width: 440px)" });
 
   const handleKeyDown = (e) => {
     let kee = e.key.toLowerCase();
@@ -18,8 +20,8 @@ const About = ({ hasSelected }) => {
   };
 
   useEffect(() => {
-    document.addEventListener("keydown", handleKeyDown);
-  }, []);
+    !isMobile && document.addEventListener("keydown", handleKeyDown);
+  }, [isMobile]);
 
   return (
     <section
@@ -36,6 +38,14 @@ const About = ({ hasSelected }) => {
           </>
         );
       })}
+      {!isMobile ? (
+        <>
+          <Fade triggerOnce delay={3000} duration={50} cascade>
+            Display more? Y/N
+          </Fade>
+          <br />
+        </>
+      ) : null}
       {showQuit ? <p>_kw_: .quitting</p> : null}
       {showInvalid ? <p>_kw_: INVALID ENTRY | .quitting</p> : null}
       {showMore ? (

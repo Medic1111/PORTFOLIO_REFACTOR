@@ -5,7 +5,6 @@ export const prompt = [
   "practical",
   "objective",
   "NO_NON_SENSE",
-  "Display more info? Y/N:",
 ];
 
 export const more = [
