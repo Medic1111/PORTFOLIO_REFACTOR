@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Fade } from "react-awesome-reveal";
-import { more, prompt } from "./Data/data";
+import { prompt } from "./Data/data";
 import { useMediaQuery } from "react-responsive";
+import More from "./More/More";
+import AnimTxt from "./AnimTxt/AnimTxt";
 
 const About = ({ hasSelected }) => {
   const [showMore, setShowMore] = useState(false);
@@ -29,32 +30,12 @@ const About = ({ hasSelected }) => {
       className=" overflow-auto w-full h-full bg-slate-950 text-slate-50"
     >
       {prompt.map((el, index) => {
-        return (
-          <>
-            <Fade triggerOnce delay={(1000 * index) / 2} duration={50} cascade>
-              {el}
-            </Fade>
-            <br />
-          </>
-        );
+        return <AnimTxt el={el} delay={(1000 * index) / 2} />;
       })}
-      {!isMobile ? (
-        <>
-          <Fade triggerOnce delay={3000} duration={50} cascade>
-            Display more? Y/N
-          </Fade>
-          <br />
-        </>
-      ) : null}
+      {!isMobile ? <AnimTxt el={"Display more? Y/N"} delay={3000} /> : null}
       {showQuit ? <p>_kw_: .quitting</p> : null}
       {showInvalid ? <p>_kw_: INVALID ENTRY | .quitting</p> : null}
-      {showMore ? (
-        <>
-          {more.map((el) => (
-            <p>{el}</p>
-          ))}
-        </>
-      ) : null}
+      {showMore ? <More /> : null}
     </section>
   );
 };

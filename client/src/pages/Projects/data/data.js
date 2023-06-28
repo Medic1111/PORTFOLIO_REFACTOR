@@ -11,6 +11,14 @@ import Noma1 from "../../../assets/noma1.png";
 import Noma2 from "../../../assets/noma2.png";
 import Noma3 from "../../../assets/noma3.png";
 import Noma4 from "../../../assets/noma4.png";
+import Cube from "../../../assets/cube.png";
+import Cube1 from "../../../assets/cube1.png";
+import Cube2 from "../../../assets/cube2.png";
+import Cube3 from "../../../assets/cube3.png";
+import Cube4 from "../../../assets/cube4.png";
+import Cube5 from "../../../assets/cube5.png";
+import Cube6 from "../../../assets/cube6.png";
+import Cube7 from "../../../assets/cube7.png";
 
 export const stateTemplate = {
   title: "",
@@ -75,8 +83,8 @@ export const data = [
     tech: `The developed software is a full stack application leveraging a modern technology stack including React, Node.js, Express.js, MongoDB, and Vanilla CSS. To facilitate secure online payments, the Stripe API has been integrated into the platform. The authentication and authorization system has been meticulously crafted from scratch. To ensure robust security measures are in place, the application is guarding against XSS attacks, NoSQL script injection, and brute force attacks, while prioritizing data sanitization. Real-time chat functionality has been achieved through the utilization of Socket.io, enabling seamless communication between users and employees. The application incorporates automatic email notifications for various events such as user registration, purchases, and customer service interactions. Additionally, a scheduled cron task has been implemented to automatically empty inactive shopping carts every 24 hours and streamline the restocking process of products. To efficiently manage client-side state, Redux in conjunction with React-Redux and Redux Toolkit has been employed. The software's design embraces a clean and bold aesthetic, complemented by captivating animations from the React Awesome Reveal library. Horizontal scrolling has been implemented to provide users with a unique browsing experience. One notable feature is the dynamic product list, which automatically updates on a monthly basis. It showcases components such as the "current expo," "previous expo," and "spoiler," providing visitors with a glimpse into the latest offerings. This meticulously developed software solution offers an immersive, secure, and visually captivating experience for art enthusiasts, catering to their diverse needs in the world of e-commerce.`,
     status:
       "Please note that the featured project on my portfolio is currently in an MVP (Minimum Viable Product) status, and I wanted to be transparent about its progress. While the project is functional and publicly accessible, it is important to mention that there are known bugs and issues that are actively being addressed. My current focus is on testing and actively working on bug reporting and fixing to improve the project's stability and user experience. As this is a side-project and I have limited dedicated time available, I am working diligently to address these issues within the constraints of my schedule. I believe in openness and continuous improvement, and I am committed to resolving the bugs and enhancing the project further. Your understanding and patience are greatly appreciated as I strive to provide the best possible experience for users. Please feel free to reach out if you have any questions or require further clarification regarding the project's status or any other aspects.",
-    gallery: [Gal, Indi, User, Hero],
-    hero: M11,
+    gallery: [Cube1, Cube2, Cube3, Cube4, Cube5, Cube6, Cube7],
+    hero: Cube,
   },
   {
     title: "open-source",
