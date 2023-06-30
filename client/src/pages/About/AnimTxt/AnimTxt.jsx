@@ -10,5 +10,4 @@ const AnimTxt = ({ delay, el }) => {
     </>
   );
 };
-// delay={(1000 * index) / 2}
 export default AnimTxt;

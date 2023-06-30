@@ -1,0 +1,8 @@
+POST http://localhost:3002/api/v1/notification HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "TESTING",
+  "email": "TESTING@test.com",
+  "body": "this is the testing body"
+}
