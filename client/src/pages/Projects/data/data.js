@@ -3,28 +3,17 @@ import Gal from "../../../assets/gal.png";
 import Indi from "../../../assets/indi.png";
 import User from "../../../assets/user.png";
 import Hero from "../../../assets/hero.png";
-import Open from "../../../assets/open.png";
-import Open1 from "../../../assets/open1.png";
-import Open2 from "../../../assets/open2.png";
 import Noma from "../../../assets/noma.png";
 import Noma1 from "../../../assets/noma1.png";
 import Noma2 from "../../../assets/noma2.png";
 import Noma3 from "../../../assets/noma3.png";
 import Noma4 from "../../../assets/noma4.png";
-import Cube from "../../../assets/cube.png";
-import Cube1 from "../../../assets/cube1.png";
-import Cube2 from "../../../assets/cube2.png";
-import Cube3 from "../../../assets/cube3.png";
-import Cube4 from "../../../assets/cube4.png";
-import Cube5 from "../../../assets/cube5.png";
-import Cube6 from "../../../assets/cube6.png";
-import Cube7 from "../../../assets/cube7.png";
-import Mbr from "../../../assets/mbr.png";
-import Mbr1 from "../../../assets/mbr1.png";
-import Mbr2 from "../../../assets/mbr2.png";
-import Mbr4 from "../../../assets/mbr4.png";
-import Mbr5 from "../../../assets/mbr5.png";
-import Mbr3 from "../../../assets/mbr3.jpeg";
+import Qr from "../../../assets/qr.png";
+import Qr1 from "../../../assets/qr1.png";
+import Qr2 from "../../../assets/qr2.png";
+import Qr3 from "../../../assets/qr3.png";
+import Qr4 from "../../../assets/qr4.png";
+import Qr5 from "../../../assets/qr5.png";
 
 export const stateTemplate = {
   title: "",
@@ -50,19 +39,18 @@ export const data = [
     gallery: [Gal, Indi, User, Hero],
     hero: M11,
   },
-  // {
-  //   title: "QR-Code Ticket",
-  //   live: "https://m11-n5ne.onrender.com/",
-  //   source: "https://github.com/Medic1111/M11-STUDIO-REDUX",
-  //   summary:
-  //     "Introducing a minimalist E-commerce platform designed specifically for enthusiasts of wall and street art. This user-friendly platform offers a delightful interface and engaging user experience. Registered users can manage their shopping carts and securely complete transactions using credit cards. The platform also boasts convenient email notifications, order confirmations, and a real-time chat feature for prompt customer support.",
-  //   tech: `The developed software is a full stack application leveraging a modern technology stack including React, Node.js, Express.js, MongoDB, and Vanilla CSS. To facilitate secure online payments, the Stripe API has been integrated into the platform. The authentication and authorization system has been meticulously crafted from scratch. To ensure robust security measures are in place, the application is guarding against XSS attacks, NoSQL script injection, and brute force attacks, while prioritizing data sanitization. Real-time chat functionality has been achieved through the utilization of Socket.io, enabling seamless communication between users and employees. The application incorporates automatic email notifications for various events such as user registration, purchases, and customer service interactions. Additionally, a scheduled cron task has been implemented to automatically empty inactive shopping carts every 24 hours and streamline the restocking process of products. To efficiently manage client-side state, Redux in conjunction with React-Redux and Redux Toolkit has been employed. The software's design embraces a clean and bold aesthetic, complemented by captivating animations from the React Awesome Reveal library. Horizontal scrolling has been implemented to provide users with a unique browsing experience. One notable feature is the dynamic product list, which automatically updates on a monthly basis. It showcases components such as the "current expo," "previous expo," and "spoiler," providing visitors with a glimpse into the latest offerings. This meticulously developed software solution offers an immersive, secure, and visually captivating experience for art enthusiasts, catering to their diverse needs in the world of e-commerce.`,
-  //   status:
-  //     "Please note that the featured project on my portfolio is currently in an MVP (Minimum Viable Product) status, and I wanted to be transparent about its progress. While the project is functional and publicly accessible, it is important to mention that there are known bugs and issues that are actively being addressed. My current focus is on testing and actively working on bug reporting and fixing to improve the project's stability and user experience. As this is a side-project and I have limited dedicated time available, I am working diligently to address these issues within the constraints of my schedule. I believe in openness and continuous improvement, and I am committed to resolving the bugs and enhancing the project further. Your understanding and patience are greatly appreciated as I strive to provide the best possible experience for users. Please feel free to reach out if you have any questions or require further clarification regarding the project's status or any other aspects.",
-
-  //   gallery: [Mbr1, Mbr2, Mbr4, Mbr5, Mbr3],
-  //   hero: Mbr,
-  // },
+  {
+    title: "Food-QR",
+    live: "https://food-qr.onrender.com/",
+    source: "https://github.com/Medic1111/FOOD-QR-FULL-STACK-TS",
+    summary:
+      "Introducing an easy-to-use application for food establishments to create online menus and generate QR codes. No technical skills needed! Simply fill out forms to input your menu items, and the application takes care of the rest. Once completed, you can print the unique QR code and place it anywhere in your establishment. When customers scan the QR code with their smartphones, they instantly access the menu, conveniently browsing through dishes, descriptions, and prices. It's a modern and hassle-free way to showcase your menu and enhance the customer experience. Impress your customers with this innovative solution that brings your menu to life through a simple QR code!",
+    tech: `This application is a full stack web application built using TypeScript, React, Node.js, Express.js, and MongoDB. It is mobile-responsive and uses the Context API for state management in React. The front-end is developed with React and the user interface design is implemented using Tailwind CSS. On the back-end, Node.js and Express.js handle server-side functionality, while MongoDB serves as the database for storing and managing the menu and related information.
+    In summary, this application utilizes TypeScript, React, Context API, Tailwind CSS, Node.js, Express.js, and MongoDB to create an efficient and responsive solution for creating online menus and generating QR codes.`,
+    status: "Production",
+    gallery: [Qr1, Qr2, Qr3, Qr4, Qr5],
+    hero: Qr,
+  },
   {
     title: "nomad-me",
     live: "https://m11-n5ne.onrender.com/",
@@ -104,17 +92,5 @@ export const data = [
   //     "Please note that the featured project on my portfolio is currently in an MVP (Minimum Viable Product) status, and I wanted to be transparent about its progress. While the project is functional and publicly accessible, it is important to mention that there are known bugs and issues that are actively being addressed. My current focus is on testing and actively working on bug reporting and fixing to improve the project's stability and user experience. As this is a side-project and I have limited dedicated time available, I am working diligently to address these issues within the constraints of my schedule. I believe in openness and continuous improvement, and I am committed to resolving the bugs and enhancing the project further. Your understanding and patience are greatly appreciated as I strive to provide the best possible experience for users. Please feel free to reach out if you have any questions or require further clarification regarding the project's status or any other aspects.",
   //   gallery: [Cube1, Cube2, Cube3, Cube4, Cube5, Cube6, Cube7],
   //   hero: Cube,
-  // },
-  // {
-  //   title: "open-source",
-  //   live: "https://finally-seen-oizk.onrender.com/",
-  //   source: "https://github.com/Medic1111/FINALLY-SEEN",
-  //   summary:
-  //     "FINALLY-SEEN is an upcoming project aimed at helping developers improve their portfolios by providing valuable feedback. As the creator of this project, my goal is to create a platform where developers can share their portfolio websites and receive constructive input from the community. I believe that everyone should have an opportunity to contribute to open source projects, regardless of their skill level. That's why I'm working hard to make FINALLY-SEEN accessible to developers of all backgrounds. Whether you're just starting out or have years of experience, there will be a task that suits your skills and interests.",
-  //   tech: `The technology stack for FINALLY-SEEN includes React, React Router, TypeScript, MongoDB, Node.js, Express.js, and Tailwind CSS. These powerful tools will be leveraged to build a user-friendly and feature-rich platform that fosters collaboration and growth within the developer community.`,
-  //   status:
-  //     "Although the project is still in its early stages and undergoing further definition, its primary goal is to help developers, like myself, who are eager to contribute to open source projects by providing a welcoming entry point. I am committed to making this project accessible to developers of all skill levels, ensuring that everyone can find a suitable task and contribute meaningfully. I invite developers who are passionate about open source and want to improve their portfolios to join this project. Together, we can create a supportive environment where you can enhance your skills, receive valuable feedback, and make a positive impact on the community. As the creator and active contributor of FINALLY-SEEN, I take on multiple roles to ensure the project's success. In addition to shaping the project's direction, I actively engage with the community by opening new issues and describing tasks that developers can work on. I also take on the responsibility of reviewing pull requests, ensuring that the code meets the project's standards and providing constructive feedback.",
-  //   gallery: [Open1, Open2],
-  //   hero: Open,
   // },
 ];
