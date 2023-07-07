@@ -1,4 +1,5 @@
 import { uiCtx } from "../../../features/ui-ctx";
+import Video from "../Video/Video";
 import { data, stateTemplate } from "../data/data";
 import { useContext, useEffect, useState } from "react";
 
@@ -8,6 +9,7 @@ const findSelected = (title, arr) => {
 
 const EachProject = () => {
   const selectedTitle = useContext(uiCtx).projectToShow;
+
   const [projectToShow, setProjectToShow] = useState(stateTemplate);
 
   useEffect(() => {
@@ -16,13 +18,8 @@ const EachProject = () => {
 
   return (
     <div className="p-2 overflow-y-auto  h-full w-full">
-      <img className=" border-2 border-gray-800" src={projectToShow.hero} />
-      {/* <video className="w-full border-2 border-gray-800 max-h-[25em]" controls>
-        <source src={projectToShow.videoMP} type="video/mp4" />
-        <source src={projectToShow.videoMP} type="video/ogg" />
-        <source src={projectToShow.videoMP} type="video/webm" />
-        Your browser does not support the video tag.
-      </video> */}
+      {/* <img className=" border-2 border-gray-800" src={projectToShow.hero} /> */}
+      <Video title={projectToShow.title} />
       <h3 className="pl-2 py-5 border-t-0 border-2 border-gray-800 text-5xl">
         {projectToShow.title.toUpperCase()}
       </h3>
