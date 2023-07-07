@@ -16,18 +16,13 @@ const EachProject = () => {
 
   return (
     <div className="p-2 overflow-y-auto  h-full w-full">
-      {/* <img className=" border-2 border-gray-800" src={projectToShow.hero} /> */}
-      <video
-        className="w-full border-2 border-gray-800 max-h-[25em]"
-        autoPlay
-        muted
-        controls
-      >
-        <source src={projectToShow.video} type="video/mp4" />
-        <source src={projectToShow.video} type="video/ogg" />
-        <source src={projectToShow.video} type="video/webm" />
+      <img className=" border-2 border-gray-800" src={projectToShow.hero} />
+      {/* <video className="w-full border-2 border-gray-800 max-h-[25em]" controls>
+        <source src={projectToShow.videoMP} type="video/mp4" />
+        <source src={projectToShow.videoMP} type="video/ogg" />
+        <source src={projectToShow.videoMP} type="video/webm" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
       <h3 className="pl-2 py-5 border-t-0 border-2 border-gray-800 text-5xl">
         {projectToShow.title.toUpperCase()}
       </h3>
@@ -65,12 +60,12 @@ const EachProject = () => {
       <p className="pl-2 py-5 border-t-0 border-2 border-gray-800 text-md">
         {projectToShow.status}
       </p>
-      {/* <p className="pl-2 py-5 border-t-0 border-2 border-gray-800 text-xl">
+      <p className="pl-2 py-5 border-t-0 border-2 border-gray-800 text-xl">
         Gallery:
       </p>
       {projectToShow.gallery.map((el) => (
         <img className=" border-2 border-t-0  border-gray-800" src={el} />
-      ))} */}
+      ))}
     </div>
   );
 };
