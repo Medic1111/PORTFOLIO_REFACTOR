@@ -1,6 +1,4 @@
 const Video = ({ title }) => {
-  console.log(title);
-
   if (title === "nomad-me") {
     return (
       <video
@@ -8,6 +6,7 @@ const Video = ({ title }) => {
         controls
         autoPlay
         muted
+        preload="auto"
       >
         <source
           src="https://res.cloudinary.com/dfid6vhes/video/upload/v1688749395/demo_gwitxv.mp4"
@@ -33,6 +32,7 @@ const Video = ({ title }) => {
         controls
         autoPlay
         muted
+        preload="auto"
       >
         <source
           src="https://res.cloudinary.com/dfid6vhes/video/upload/v1688752139/food_gbwkk8.mov"
@@ -58,6 +58,7 @@ const Video = ({ title }) => {
         controls
         autoPlay
         muted
+        preload="auto"
       >
         <source
           src="https://res.cloudinary.com/dfid6vhes/video/upload/v1688749463/m11_mhryrm.mp4"
