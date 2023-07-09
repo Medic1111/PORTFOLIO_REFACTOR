@@ -3,7 +3,7 @@ export const classes = {
     " justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none",
   popUpBox: "relative w-auto my-6  mx-auto max-w-lf ",
   contentBox:
-    " border-2 border-slate-950 relative flex flex-col w-full bg-gray-300 outline-none focus:outline-none",
+    " border-2   border-slate-950 border-2  border-t-slate-300 border-l-slate-300 relative flex flex-col w-full bg-gray-300 outline-none focus:outline-none",
   headerBox:
     " flex  w-full items-start justify-between border-b border-solid border-slate-200 ",
   header:
