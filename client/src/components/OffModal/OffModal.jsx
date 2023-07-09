@@ -15,8 +15,12 @@ const OffModal = () => {
             className={classes.modalBox}
           >
             <div className={classes.txtBox}>
-              <p className={classes.p}>
-                IT IS NOW SAFE TO CLOSE THIS APPLICATION <FaEarlybirds />
+              <p className={classes.icon}>
+                <FaEarlybirds />
+              </p>
+
+              <p className={classes.txt}>
+                It is now safe to close this application
               </p>
             </div>
           </div>
