@@ -5,8 +5,10 @@ const Skills = () => {
     <>
       <p className="pb-3 border-b-2  text-xl my-5">SKILLS:</p>
       <ul className="pb-3 border-b-2  my-5 flex items-center justify-start flex-wrap">
-        {techArr.map((el) => (
-          <li className="my-1">{el}</li>
+        {techArr.map((el, index) => (
+          <li key={`SKILLS_${index}`} className="my-1">
+            {el}
+          </li>
         ))}
       </ul>
     </>

@@ -60,8 +60,12 @@ const EachProject = () => {
       <p className="pl-2 py-5 border-t-0 border-2 border-gray-800 text-xl">
         Gallery:
       </p>
-      {projectToShow.gallery.map((el) => (
-        <img className=" border-2 border-t-0  border-gray-800" src={el} />
+      {projectToShow.gallery.map((el, index) => (
+        <img
+          key={`GAL_${index}`}
+          className=" border-2 border-t-0  border-gray-800"
+          src={el}
+        />
       ))}
     </div>
   );

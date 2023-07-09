@@ -26,11 +26,13 @@ const About = ({ hasSelected }) => {
 
   return (
     <section
-      cascade
+      cascade="true"
       className=" overflow-auto w-full h-full bg-slate-950 text-slate-50"
     >
       {prompt.map((el, index) => {
-        return <AnimTxt el={el} delay={(1000 * index) / 2} />;
+        return (
+          <AnimTxt key={`PROMPT_${index}`} el={el} delay={(1000 * index) / 2} />
+        );
       })}
       {!isMobile ? <AnimTxt el={"Display more? Y/N"} delay={3000} /> : null}
       {showQuit ? <p>_kw_: .quitting</p> : null}

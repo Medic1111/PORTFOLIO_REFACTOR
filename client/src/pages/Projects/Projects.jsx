@@ -15,9 +15,12 @@ const Projects = () => {
   return (
     <section className="overflow-auto flex  flex-col items-start justify-start gap-8  w-full h-full ">
       <div className=" w-full h-full flex flex-wrap flex-col items-start justify-start  p-5">
-        {data.map((el) => {
+        {data.map((el, index) => {
           return (
-            <div className="w-1/3 xs:w-1/5 flex flex-col items-center">
+            <div
+              key={`FOLDER_${index}`}
+              className="w-1/3 xs:w-1/5 flex flex-col items-center"
+            >
               <button
                 onClick={() => selectProject(el.title)}
                 className=" text-3xl sm:text-5xl"

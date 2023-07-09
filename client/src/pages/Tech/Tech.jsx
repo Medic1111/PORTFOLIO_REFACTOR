@@ -59,9 +59,10 @@ const Tech = () => {
       {techMgr.showFlow && <Flow />}
 
       <div className={classes.btnBox}>
-        {dataArr.map((obj) => {
+        {dataArr.map((obj, index) => {
           return (
             <button
+              key={`TECH_${index}`}
               onClick={() => selectOption(obj.foo)}
               className={classes.btn}
             >
