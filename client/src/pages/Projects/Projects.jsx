@@ -17,10 +17,10 @@ const Projects = () => {
       <div className=" w-full h-full flex flex-wrap flex-col items-start justify-start  p-5">
         {data.map((el) => {
           return (
-            <div className="w-1/3 sm:w-1/5 flex flex-col items-center">
+            <div className="w-1/3 xs:w-1/5 flex flex-col items-center">
               <button
                 onClick={() => selectProject(el.title)}
-                className="  text-5xl"
+                className=" text-3xl sm:text-5xl"
               >
                 🗂
               </button>
