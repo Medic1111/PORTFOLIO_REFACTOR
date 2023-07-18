@@ -53,7 +53,7 @@ export const data = [
   },
   {
     title: "nomad-me",
-    live: "https://m11-n5ne.onrender.com/",
+    live: "https://nomad-me-v3.onrender.com",
     source: "https://github.com/Medic1111/NOMAD-ME-NO-TS/tree/main",
     status:
       "In terms of the application's current status, it has achieved its primary objective of enhancing the previous version and delivering a more robust and feature-rich experience. However, due to time constraints and other priorities, I will no longer be actively working on further development or maintenance of the application. The application remains in a stable state and can be utilized effectively for its intended purposes.",
